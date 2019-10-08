@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+@font-face {
+    font-family: RobotoCondensed-Regular;  /*Гарнитура шрифта */
+    src: url(fonts/RobotoCondensed-Regular.ttf); /* Путь к файлу со шрифтом */
+   }
+
 body {
   margin: 0;
 }
@@ -19,7 +24,7 @@ body {
 
 .navbar a {
   float: left;
-  font-size: 16px;
+  font-size: 14px;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -32,34 +37,32 @@ body {
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;  
+  font-size: 14px;  
   border: none;
   outline: none;
   color: white;
   padding: 14px 16px;
   background-color: inherit;
-  font: inherit;
   margin: 0;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: #707070;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: WhiteSmoke;
   width: 100%;
   left: 0;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 .dropdown-content .header {
-  background: red;
-  padding: 16px;
-  color: white;
+  background: WhiteSmoke;
+  padding: 12px;
+  color: black;
 }
 
 .dropdown:hover .dropdown-content {
@@ -78,7 +81,7 @@ body {
 .column a {
   float: none;
   color: black;
-  padding: 16px;
+  padding: 12px;
   text-decoration: none;
   display: block;
   text-align: left;
@@ -107,10 +110,9 @@ body {
 <body>
 
 <div class="navbar">
-  <a href="#home">Home</a>
-  <a href="#news">News</a>
+  <a href="#home">Главная</a>
   <div class="dropdown">
-    <button class="dropbtn">Dropdown 
+    <button class="dropbtn">ABAP recipes
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
@@ -142,9 +144,11 @@ body {
 </div>
 
 <div style="padding:16px">
-  <h3>Responsive Mega Menu (Full-width dropdown in navbar)</h3>
-  <p>Hover over the "Dropdown" link to see the mega menu.</p>
-  <p>Resize the browser window to see the responsive effect.</p>
+  <h3>Страница содержит записи для повседневной работы, а так же некоторую информацию об Авторе. </h3>
+  <p>Контент не является учебным пособием, а так же не гарантирует правильность, полноту и качество представленной информации. </p>
+  <p>Используя данный материал, Вы соглашаетесь с тем, что Автор не является ответственным лицом. </p>
+  <p>Все материалы размещены исключительно в ознакомительных целях. </p>
+  <p></p>
 </div>
 
 </body>
